@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(jumpVector,ForceMode2D.Impulse);
+
         }
     }
 }
