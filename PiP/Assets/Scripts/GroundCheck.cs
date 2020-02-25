@@ -11,7 +11,7 @@ namespace Assets.Scripts
         GameObject Player;
         void Start()
         {
-            Player = gameObject.transform.parent.gameObject;
+            Player = GameObject.Find("Player");
         }
         void OnCollisionEnter2D(Collision2D collision)
         {
