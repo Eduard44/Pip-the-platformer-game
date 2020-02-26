@@ -160,8 +160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1061dbeae1ff54196cd2478fe6e805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundX: 0.15
-  boundY: 0.05
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -189,7 +187,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -352,8 +350,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031881564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.77, z: 0}
+  m_LocalScale: {x: 0.2664283, y: 0.2664283, z: 0.2664283}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -416,15 +414,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0ec0c722e514b7c4583746eefb6b6dac, type: 3}
+  m_Sprite: {fileID: 3326458103128800172, guid: dd6e6607245ffd749ae515d08e5959d5,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.88, y: 2.88}
+  m_Size: {x: 0.2, y: 0.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1279933949
@@ -435,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279933947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.78, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1776579879}
@@ -455,9 +454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8183086246c7de42828c148c2973663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpVector: {x: 0, y: 6}
-  isGrounded: 0
 --- !u!50 &1279933951
 Rigidbody2D:
   serializedVersion: 4
@@ -497,9 +493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499589b654cf3a14997831d2fc2b3c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endPointOfWeapon: {fileID: 953648018}
-  bullet: {fileID: 3981119576945310520, guid: a9aea5739156a3e458ad883df3e5ae2f, type: 3}
-  speed: 10
 --- !u!1 &1776579878
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776579878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.531, y: -0.945, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1279933949}
@@ -585,12 +578,12 @@ PrefabInstance:
     - target: {fileID: 4206259097601570804, guid: 0b2c89956edfb694b86f181d1597aa97,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4206259097601570804, guid: 0b2c89956edfb694b86f181d1597aa97,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4206259097601570804, guid: 0b2c89956edfb694b86f181d1597aa97,
         type: 3}
