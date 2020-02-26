@@ -18,6 +18,14 @@ public class FireAtMousePosition : MonoBehaviour
     public int damage = 40;
     //this is for our "bullet" which is raycast and needs to be seen so I am seeting a line for the bullet;
     public LineRenderer lineRenderer;
+    //this is the player
+    GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+    }
+
     void Update()
     {
         //This is changing the vector2 we made earlier to the point of the mouse in the world.
@@ -33,6 +41,7 @@ public class FireAtMousePosition : MonoBehaviour
             //Method for shooting.
             FireBullet();
         }
+        
     }
 
     void FireBullet()
