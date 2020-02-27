@@ -43,6 +43,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: SkyBackgtound
+    uniqueID: 1182660925
+    locked: 0
+  - name: GrassBackground
+    uniqueID: 4207160273
+    locked: 0
+  - name: MountainBackground
+    uniqueID: 1919738199
+    locked: 0
+  - name: ForestBackground
+    uniqueID: 1852886433
+    locked: 0
   - name: Road
     uniqueID: 989153263
     locked: 0
