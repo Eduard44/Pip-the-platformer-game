@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //the direction of the mouse
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
