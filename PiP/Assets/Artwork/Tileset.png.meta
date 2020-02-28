@@ -34,7 +34,7 @@ TextureImporter:
     second: rocks_5
   - first:
       213: -8025435653959805260
-    second: rocks_02
+    second: rocks_2
   - first:
       213: 4938342473259674171
     second: normal_plate_0
@@ -434,7 +434,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rocks_02
+      name: rocks_2
       rect:
         serializedVersion: 2
         x: 48
