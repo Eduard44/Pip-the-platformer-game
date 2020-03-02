@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Blocking
   - Enemy
   - Character
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 2037654089
+    locked: 0
+  - name: Interactable
+    uniqueID: 1365809531
     locked: 0

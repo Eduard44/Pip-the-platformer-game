@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // paramater of speed variable
-    public float speed = 10;
-    public Vector2 jumpVector = new Vector2(0f, 10f);
+    public float speed = 3;
+    public Vector2 jumpVector = new Vector2(0f, 2f);
     public bool isGrounded = false;
     private Vector2 moveDelta;
 
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     protected virtual void RotatePlayer(Vector2 input)
     {
-        moveDelta = new Vector2(input.x * speed, input.y);
+        moveDelta = new Vector2(input.x, input.y);
         //if we move right we change our sprite facing right
         if (moveDelta.x > 0)
         {
