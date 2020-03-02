@@ -32,11 +32,14 @@ namespace Assets.Scripts
             //animator.SetTrigger("Attack");
 
             Collider2D[] enemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-            foreach (var enemy in enemiesHit)
+            if(enemiesHit.Length > 0)
             {
-                enemy.GetComponent<Enemy>().TakeDamage(damage);
+                foreach (var enemy in enemiesHit)
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(damage);
+                }
             }
+            
         }
 
     }
