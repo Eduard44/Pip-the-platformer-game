@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // paramater of speed variable
-    public float speed = 4;
+    public float speed = 10;
     public Vector2 jumpVector = new Vector2(0f, 10f);
     public bool isGrounded = false;
     private Vector2 moveDelta;
