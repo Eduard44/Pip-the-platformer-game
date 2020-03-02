@@ -2,48 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class PlayerMovement : MonoBehaviour
-{
-    public float speed = 10.0f;
-    public bool isGrounded = false;
-    public Vector2 jumpVector = new Vector2 (0f,10f);
-    void Update()
-    {
-        
-        // Get the horizontal and vertical axis.
-        // By default they are mapped to the arrow keys.
-        // The value is in the range -1 to 1
-        float leftRight = Input.GetAxis("Horizontal") * speed;
 
-
-        // Make it move 10 meters per second instead of 10 meters per 
-
-frame...
-        leftRight *= Time.deltaTime;
-
-        // Move translation along the object's z-axis
-        transform.Translate(leftRight, 0, 0);
-        Jump();
-
-    }
-    void Jump()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(jumpVector, 
-
-ForceMode2D.Impulse);
-        }
-    }
-
-    
-}*/
 public class PlayerMovement : MonoBehaviour
 {
     // paramater of speed variable
-    public float speed = 10;
+    public float speed = 4;
     public Vector2 jumpVector = new Vector2(0f, 10f);
     public bool isGrounded = false;
+    private Vector2 moveDelta;
+
     void Update()
     {
         // making direction by getting speed multiplyed with -1 or 1 ;
@@ -63,6 +30,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(jumpVector,ForceMode2D.Impulse);
+        }
+    }
+
+    protected virtual void RotatePlayer(Vector2 input)
+    {
+        moveDelta = new Vector2(input.x * speed, input.y);
+        //if we move right we change our sprite facing right
+        if (moveDelta.x > 0)
+        {
+            transform.localScale = Vector2.one;
+        }
+        //if we move left we change our sprite to facing left
+        else if (moveDelta.x < 0)
+        {
+            transform.localScale = new Vector2(-1, 1);
         }
     }
 }
