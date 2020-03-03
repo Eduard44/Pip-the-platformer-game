@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : PlayerMovement
 {
-
+    //our player's health
+    public float health = 100;
     //this initializes things that go on starting the game
     private void Start()
     {
@@ -20,5 +21,10 @@ public class Player : PlayerMovement
         float y = Input.GetAxisRaw("Vertical");
 
         RotatePlayer(new Vector2(x, y));
+
+        if(this.health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
