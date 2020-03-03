@@ -10,6 +10,12 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 jumpVector = new Vector2(0f, 2f);
     public bool isGrounded = false;
     private Vector2 moveDelta;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -40,11 +46,27 @@ public class PlayerMovement : MonoBehaviour
         if (moveDelta.x > 0)
         {
             transform.localScale = Vector2.one;
+            Move();
         }
         //if we move left we change our sprite to facing left
         else if (moveDelta.x < 0)
         {
             transform.localScale = new Vector2(-1, 1);
+            Move();
         }
+        else if (moveDelta.x == 0)
+        {
+            Stop();
+        }
+    }
+
+    private void Move()
+    {
+        animator.SetTrigger("Move");
+        animator.SetBool("Stop", false);
+    }
+    private void Stop()
+    {
+        animator.SetBool("Stop", true);
     }
 }
