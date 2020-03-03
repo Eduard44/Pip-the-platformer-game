@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4465996797860299028}
   - component: {fileID: 4465996797860299029}
-  - component: {fileID: 4465996797860299018}
+  - component: {fileID: 4454621560576747300}
   m_Layer: 11
   m_Name: Spikes
   m_TagString: Interactable
@@ -83,16 +83,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4465996797860299018
-BoxCollider:
+--- !u!61 &4454621560576747300
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4465996797860299019}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.13462964, z: 0.2}
-  m_Center: {x: 0, y: -0.01268518, z: 0}
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0

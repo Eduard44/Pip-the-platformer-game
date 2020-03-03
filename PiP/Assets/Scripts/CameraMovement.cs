@@ -11,11 +11,18 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
-        lookAt = GameObject.Find("Player").transform;
+        if(GameObject.Find("Player") != null)
+        {
+            lookAt = GameObject.Find("Player").transform;
+        }
     }
 
     private void LateUpdate()
     {
+        if(GameObject.Find("Player") == null)
+        {
+            return;
+        }
         Vector3 delta = Vector3.zero;
 
         //This is to check if we are inside the bounds on the X axis
