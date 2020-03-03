@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : PlayerMovement
 {
+    Animator animatorPlayer;
     //our player's health
     public float health = 100;
 
