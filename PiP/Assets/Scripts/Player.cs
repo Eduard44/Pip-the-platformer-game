@@ -6,13 +6,6 @@ public class Player : PlayerMovement
 {
     //our player's health
     public float health = 100;
-    //this initializes things that go on starting the game
-    private void Start()
-    {
-
-        //to not destroy the player loading a new level
-        DontDestroyOnLoad(gameObject);
-    }
 
     private void FixedUpdate()
     {
